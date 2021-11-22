@@ -1,0 +1,6 @@
+.error-message{
+    background:url(false.png) 10px center no-repeat;
+    padding: 0 0 0 30px;
+    display: inline;
+    color: #ff5b5b;
+    display: none; }
