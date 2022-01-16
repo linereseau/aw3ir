@@ -1,12 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
+        <script type="text/javascript" src="formulaire.js"></script>
+        <title></title>
+        <link rel="stylesheet" href="deco.css">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -24,10 +26,39 @@
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="js/main.js"></script>-->
     </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+    
+    <div style="width: 60%; margin: 0 auto;">
+        <h1>Saisie d'une fiche "Personne"</h1>        
+        <table>
+        <form   method = "post" action = "" name = "person" class = "well">
+            <tr>
+              <p><td><label for="nom">nom</label></p></td>
+              <td><p><input type="text" id="nom" class="form-control" name= "nom"  placeholder="nom" min="5" max="20"></p></td>
+            </tr>
+            <tr>
+                <p><td><label for="prenom">prenom</label></p></td>
+                <td><p><input type="text" id="prenom" class="form-control" name= "prenom"  placeholder="prenom" min="5" max="20"></p></td>
+              </tr>
+            <tr>
+                <td><p><label for="start">date:</label></p></td>
+            <td><p><input type="date" id="date"  name="trip-start" value="18/10/2021" placeholder="JJ/MM/AAAA"></p></td>
+            </tr>
+            <tr>
+              <td><p><label for="addres postale">Address postale</label></p></td>
+              <td><p></p><input type="text" id="adresse" class="form-control" name="adresse"  placeholder="Address postale" min="5" max="50"></p></td>
+            </tr>
+            <tr>
+                <td><p><label for="addres email">Address email</label></p></td>
+                <td><p><input type="text" id="mail" class="form-control" name="adresse email"  placeholder="Address email" min="5" max="50"></p></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Valider" onclick="validation()"></td>
+        </tr>
+          </form>
+        </table>
+    </div>
+    <p>
+        <div id="error"> </div> </p>
+        <p><div id="resultat"> </div></p>
     </body>
 </html>
