@@ -58,7 +58,6 @@ function validateEmail(email) {
     let today = Date.now();
     let  dateNaissance = new Date(date); // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Date/Date#syntaxe
     let dateNaissanceTimestamp = dateNaissance.getTime();
-
     return dateNaissanceTimestamp < today;
  }
 const openModal = function (e) {
